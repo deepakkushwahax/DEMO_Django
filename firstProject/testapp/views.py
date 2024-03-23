@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpRequest
+from django.http import HttpResponse
 
 def greetings(request):
-    s = "Hello and Welcome to first view"
-    return HttpRequest(s)
+    s = "<h1>Hello and Welcome to first view</h1>"
+    return HttpResponse(s)
