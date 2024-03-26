@@ -12,10 +12,7 @@ def testpaper(request):
     d="Bjarne Stroutrup"
     context={
         'que':que,
-        'a':a,
-        'b':b,
-        'c':c,
-        "d":d,
+        'options':[a,b,c,d]
     }
     template = loader.get_template('testpaper.html')
     res = template.render(context,request)
